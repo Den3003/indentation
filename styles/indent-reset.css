@@ -1,0 +1,39 @@
+.indent-reset {
+  padding: 25px 0;
+}
+
+.indent-reset__title {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0 0 30px;
+}
+
+.indent-reset__text {
+  margin: 0 0 30px;
+}
+
+.indent-reset__figure {
+  margin: 0 0 30px;
+}
+
+.indent-reset__figure_margin_reset {
+  margin: 0;
+}
+
+.indent-reset__figcaption {
+  margin: 0 0 30px;
+}
+
+.indent-reset__image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.indent-reset__image_block_center {
+  display: block;
+  margin: 0 auto;
+}
+
+.indent-reset__image_margin-bottom_add {
+  margin-bottom: 30px;
+}

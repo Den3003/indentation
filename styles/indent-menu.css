@@ -1,0 +1,30 @@
+.indent-menu {
+  padding: 25px 0;
+}
+
+.indent-menu__container {
+  max-width: 1140px;
+  padding: 25px 45px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.indent-menu__title {
+  font-size: 44px;
+  margin: 0 0 20px;
+}
+
+.indent-menu__list {
+  list-style-position: inside;
+  padding: 0;
+}
+
+.indent-menu__item:not(:last-child) {
+  margin: 0 0 10px;
+}
+
+.menu__link {
+  color: #02535f;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
