@@ -1,0 +1,11 @@
+.versatile-grey {
+  padding: 25px 45px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.versatile-grey__title {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}

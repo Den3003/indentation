@@ -14,7 +14,6 @@
   <article class="indent">
     <div class="container">
       <h1 class="indent__title">Отступы в вёрстке: <span lang="en">margin</span> и <span lang="en">padding</span></h1>
-      <div class="indent__description">
         <p class="indent__text">
           В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. 
           Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, 
@@ -26,51 +25,48 @@
           Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. 
           Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
         </p>
-      </div>
     </div>
 
-    <section class="indent-menu">
-      <div class="container indent-menu__container">
-        <h2 class="indent-menu__title">Содержание:</h2>
-        <nav>
-          <ol class="indent-menu__list">
-            <li class="indent-menu__item"><a class="menu__link" href="#indent-between">Отступ задается от предыдущего элемента к следующему</a></li>
-            <li class="indent-menu__item"><a class="menu__link" href="#indent-dom">Отступ задается последнему возможному элементу в <span lang="en">DOM</span>-дереве</a></li>
-            <li class="indent-menu__item"><a class="menu__link" href="#indent-reset">Для последнего элемента группы отступ обнуляется</a></li>
-          </ol>
-        </nav>
-      </div>
-    </section>
+    <div class="wrapper">
+      <nav class="indent-menu versatile-grey">
+        <p class="versatile-grey__title">Содержание:</p>
+        <ol class="indent-menu__list">
+          <li class="indent-menu__item"><a class="indent-menu__link" href="#indent-between">Отступ задается от предыдущего элемента к следующему</a></li>
+          <li class="indent-menu__item"><a class="indent-menu__link" href="#indent-dom">Отступ задается последнему возможному элементу в <span lang="en">DOM</span>-дереве</a></li>
+          <li class="indent-menu__item"><a class="indent-menu__link" href="#indent-reset">Для последнего элемента группы отступ обнуляется</a></li>
+        </ol>
+      </nav>
+    </div>
 
-    <section id="indent-between" class="indent-between">
+    <section id="indent-between" class="indent-between universal">
       <div class="container">
-        <h2 class="indent-between__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
-        <figure class="indent-between__top">
+        <h2 class="universal__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
+        <div class="indent-between__top">
           <img class="indent-between__image indent-between__top-image" src="images/indent-between/indent-between1.jpg" 
           alt="Четыре блок-карточки, две сверху и две снизу, у карточки в левом верхнем углу показаны нижний и правый внешний отступ. 
           Тем самым она отталкивает остальные блоки" width="560" height="415">
-          <figcaption class="indent-between__figcaption indent-between__top-figcaption">
+          <div class="indent-between__figcaption indent-between__top-figcaption">
             <p class="indent-between__text">
-              <strong>ВАЖНО:</strong> <i ilang="en">margin</i> всегда задают от предыдущего элемента к следующему.
+              <strong>ВАЖНО:</strong> <span class="universal__word" lang="en">margin</span> всегда задают от предыдущего элемента к следующему.
             </p>
             <p class="indent-between__text">
-              Свойство <i lang="en">margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, 
-              поэтому используется <i lang="en">margin-right</i> и <i lang="en">margin-bottom</i>.
+              Свойство <span class="universal__word" lang="en">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, 
+              поэтому используется <span class="universal__word" lang="en">margin-right</span> и <span class="universal__word" lang="en">margin-bottom</span>.
             </p>
             <p class="indent-between__text">
-              (!) Свойства <i lang="en">margin-left</i> и <i lang="en">margin-top</i> используются крайне редко.
+              (!) Свойства <span class="universal__word" lang="en">margin-left</span> и <span class="universal__word" lang="en">margin-top</span> используются крайне редко.
             </p>
             <p class="indent-between__text">
-              Для <i lang="en">padding</i> верно обратное. Исключением является его применения в декоративных целях, например, 
+              Для <span class="universal__word" lang="en">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, 
               для увеличения области ссылки.
             </p>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
 
-        <figure class="indent-between__bottom">
-          <figcaption class="indent-between__figcaption indent-between__bottom-figcaption">
+        <div class="indent-between__bottom">
+          <div class="indent-between__figcaption indent-between__bottom-figcaption">
             <p class="indent-between__text">
-              Отступ внутри блока сверху или слева реализуется через <i lang="en">padding-top</i> и <i lang="en">padding-left</i> родителя.
+              Отступ внутри блока сверху или слева реализуется через <span class="universal__word" lang="en">padding-top</span> и <span class="universal__word" lang="en">padding-left</span> родителя.
             </p>
             <p class="indent-between__text">
               Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
@@ -78,140 +74,138 @@
             <p class="indent-between__text">
               Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
             </p>
-          </figcaption>
+          </div>
           <img class="indent-between__image indent-between__bottom-image" src="images/indent-between/indent-between2.jpg" alt="Блок-секция с заголовком у которого показан верхний внутренний отступ">
-        </figure>
+        </div>
       </div>
     </section>
 
-    <section id="indent-dom" class="indent-dom">
+    <section id="indent-dom" class="indent-dom universal">
       <div class="container">
-        <h2 class="indent-dom__title">Отступ задается последнему возможному элементу в <span lang="en">DOM</span>-дереве</h2>
+        <h2 class="universal__title">Отступ задается последнему возможному элементу в <span lang="en">DOM</span>-дереве</h2>
         
-        <figure class="indent-dom__figure">
-          <figcaption class="indent-dom__figcaption">
-            Вообще, <i lang="en">margin</i> задают исключительно между соседними элементами <span lang="en">DOM</span>-дерева. Для примера, посмотрите на этот список:
+        <figure class="universal__item">
+          <figcaption class="universal__description">
+            Вообще, <span class="universal__word" lang="en">margin</span> задают исключительно между соседними элементами <span lang="en">DOM</span>-дерева. Для примера, посмотрите на этот список:
           </figcaption>
-          <img class="indent-dom__image indent-dom__image_margin-bottom_add" src="images/indent-dom/indent-dom1.jpg" width="1080" height="537" 
+          <img class="universal__picture universal__picture_margin-bottom_add" src="images/indent-dom/indent-dom1.jpg" width="1080" height="537" 
           alt="Код верстки: блок section в котором блок div с классом container внутри которого есть заголовок h2 
           и список ul в котором 4 элемента li">
-          <img class="indent-dom__image indent-dom__image_block_center" src="images/indent-dom/indent-dom2.jpg" width="600" height="450" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-dom/indent-dom2.jpg" width="600" height="450" 
           alt="Показан блок с заголовком и под ним четыре параграфа и у каждого параграфа есть заголовок">
         </figure>
         
-        <figure class="indent-dom__figure">
-          <figcaption class="indent-dom__figcaption">Отступ делают за счёт соседних элементов, а не дочерних:</figcaption>
-          <img class="indent-dom__image" src="images/indent-dom/indent-dom3.jpg" width="1080" height="427" 
+        <figure class="universal__item">
+          <figcaption class="universal__description">Отступ делают за счёт соседних элементов, а не дочерних:</figcaption>
+          <img class="universal__picture" src="images/indent-dom/indent-dom3.jpg" width="1080" height="506" 
           alt="Блок с заголовком и под ним четыре параграфа и у каждого параграфа есть заголовок, 
           еще показан нижний внешний отступ у всех параграфов кроме последнего">
-          <p class="indent-dom__text indent-dom__text_border"><strong>ВАЖНО:</strong> здесь .<i lang="en">list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
         </figure>
 
-        <p class="indent-dom__text">
-          Казалось бы, можно задать отступ параграфу <i lang="en">&lt;p&gt;</i>, либо обёртке <i lang="en">&lt;article&gt;</i> для достижения той же цели. 
+        <p class="universal__text">
+          Казалось бы, можно задать отступ параграфу <span class="universal__word" lang="en">&lt;p&gt;</span>, либо обёртке <span class="universal__word" lang="en">&lt;article&gt;</span> для достижения той же цели. 
           Внешне останется все точно также, но так делать не рекомендуется.
         </p>
 
-        <figure class="indent-dom__figure">
-          <figcaption class="indent-dom__figcaption">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</figcaption>
-          <img class="indent-dom__image indent-dom__image_block_center" src="images/indent-dom/indent-dom4.jpg" width="964" height="164" 
+        <figure class="universal__item">
+          <figcaption class="universal__description">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</figcaption>
+          <img class="universal__picture universal__picture_block_center" src="images/indent-dom/indent-dom4.jpg" width="964" height="164" 
           alt="Код верстки: блок section в котором блок div с классом container и внутри него заголовок h2">
         </figure>
         
-        <figure class="indent-dom__figure">
-          <figcaption class="indent-dom__figcaption">
-            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i lang="en">section</i>. 
-            Именно для него задается <i lang="en">padding-top</i>, а не <i lang="en">div</i> с классом <i lang="en">container</i>. 
-            Свойства <i lang="en">margin</i>, которые стоят по умолчанию необходимо обнулить.
+        <figure class="universal__item">
+          <figcaption class="universal__description">
+            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="universal__word" lang="en">section</span>. 
+            Именно для него задается <span class="universal__word" lang="en">padding-top</span>, а не <span class="universal__word" lang="en">div</span> с классом <span class="universal__word" lang="en">container</span>. 
+            Свойства <span class="universal__word" lang="en">margin</span>, которые стоят по умолчанию необходимо обнулить.
           </figcaption>
-          <img class="indent-dom__image indent-dom__image_block_center" src="images/indent-dom/indent-dom5.jpg" width="1022" height="504" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-dom/indent-dom5.jpg" width="1022" height="504" 
           alt="Блок с заголовком и у блока показан внутренний отступ">
         </figure>
 
-        <p class="indent-dom__text indent-dom__text_margin_reset">
+        <p class="universal__text universal__text_margin_reset">
           Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. 
           Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
         </p>
       </div>
     </section>
 
-    <section id="indent-reset" class="indent-reset">
+    <section id="indent-reset" class="indent-reset universal">
       <div class="container">
-        <h2 class="indent-reset__title">Для последнего элемента группы отступ всегда обнуляется</h2>
-        <p class="indent-reset__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+        <h2 class="universal__title">Для последнего элемента группы отступ всегда обнуляется</h2>
+        <p class="universal__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
 
-        <figure class="indent-reset__figure">
-          <figcaption class="indent-reset__figcaption">
+        <figure class="universal__item">
+          <figcaption class="universal__description">
             Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
           </figcaption>
-          <img class="indent-reset__image indent-reset__image_block_center" src="images/indent-reset/indent-reset1.jpg" width="600" height="600" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-reset/indent-reset1.jpg" width="600" height="600" 
           alt="Два блок с заголовком и параграфами у которых тоже есть заголовки между параграфами 
           и следующим блоком одинаковые отступы">
         </figure>
 
-        <figure class="indent-reset__figure">
-          <figcaption class="indent-reset__figcaption">
-            В соответствии со вторым принципом: последний <i lang="en">margin</i> обнуляется, 
-            а нижний отступ задаётся через <i lang="en">padding</i> для <i lang="en">section</i>. 
-            Я чаще всего задаю <i lang="en">padding</i> для секции с обоих сторон, 
+        <figure class="universal__item">
+          <figcaption class="universal__description">
+            В соответствии со вторым принципом: последний <span class="universal__word" lang="en">margin</span> обнуляется, 
+            а нижний отступ задаётся через <span class="universal__word" lang="en">padding</span> для <span class="universal__word" lang="en">section</span>. 
+            Я чаще всего задаю <span class="universal__word" lang="en">padding</span> для секции с обоих сторон, 
             если расстояние между секциями 100<span lang="en">px</span> задаю секциям 
-            <i lang="en">padding-top</i>:50<i lang="en">px</i> и <i lang="en">padding-bottom</i>:50<i lang="en">px</i>.
+            <span class="universal__word" lang="en">padding-top</span>:50<span class="universal__word" lang="en">px</span> и <span class="universal__word" lang="en">padding-bottom</span>:50<span class="universal__word" lang="en">px</span>.
           </figcaption>
-          <img class="indent-reset__image indent-reset__image_block_center indent-reset__image_margin-bottom_add" src="images/indent-reset/indent-reset2.jpg" width="600" height="607" 
+          <img class="universal__picture universal__picture_block_center universal__picture_margin-bottom_add" src="images/indent-reset/indent-reset2.jpg" width="600" height="607" 
           alt="Два блока в которых есть параграфы у каждого параграфа заголовок и показано что у каждого параграфа 
           есть одинаковый внешний нижний отступ кроме последнего в блоке">
-          <img class="indent-reset__image" src="images/indent-reset/indent-reset3.jpg" width="1080" height="1058" 
+          <img class="universal__picture" src="images/indent-reset/indent-reset3.jpg" width="1080" height="1058" 
           alt="Код верстки: два блока section в каждом есть блок div с классом container и внутри заголовок h2 
           и список ul с четырьмя элементами li">
         </figure>
 
-        <figure class="indent-reset__figure">
-          <figcaption class="indent-reset__figcaption">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</figcaption>
-          <img class="indent-reset__image indent-reset__image_margin-bottom_add" src="images/indent-reset/indent-reset4.jpg" width="1080" height="88" 
+        <figure class="universal__item">
+          <figcaption class="universal__description">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</figcaption>
+          <img class="universal__picture universal__picture_margin-bottom_add" src="images/indent-reset/indent-reset4.jpg" width="1080" height="88" 
           alt="Шапка сайта в которой есть логотип, пять пунктов меню и иконка поиска">
-          <img class="indent-reset__image indent-reset__image_block_center" src="images/indent-reset/indent-reset5.jpg" width="806" height="475" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-reset/indent-reset5.jpg" width="806" height="475" 
           alt="Код верстки: блок header в котором блок div с классом container в котором тег img, блок nav и в нем блок ul с 
           пятью элементами li, а за пределами ul внутри блока nav тег button">
         </figure>
 
-        <figure class="indent-reset__figure">
-          <figcaption class="indent-reset__figcaption">
+        <figure class="universal__item">
+          <figcaption class="universal__description">
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
           </figcaption>
-          <img class="indent-reset__image indent-reset__image_block_center" src="images/indent-reset/indent-reset6.jpg" width="317" height="110" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-reset/indent-reset6.jpg" width="317" height="110" 
           alt="Код css: селектор класса относящегося к элементам li и в нем прописано свойство внешнего правого отступа 60 пикселей">
         </figure>
 
-        <figure class="indent-reset__figure indent-reset__figure_margin_reset">
-          <figcaption class="indent-reset__figcaption">
+        <figure class="universal__item universal__item_margin_reset">
+          <figcaption class="universal__description">
             Советую использовать псевдоклассы :<span lang="en">last-child</span> чаще других, например так:
           </figcaption>
-          <img class="indent-reset__image indent-reset__image_block_center" src="images/indent-reset/indent-reset7.jpg" width="500" height="383" 
+          <img class="universal__picture universal__picture_block_center" src="images/indent-reset/indent-reset7.jpg" width="500" height="383" 
           alt="Код css: три блока с классом относящегося к элементам li со свойствами, 
           в первом внешний правый отступ 60 пикселей, во втором с псевдоклассом :last-child свойство внешнего правого отступа 0 пикселей, 
           а третьем с псевдоклассами :not(:last-child) внешний правый отступ 60 пикселей">
         </figure>
       </div>
     </section>
+    <div class="wrapper">
+      <section class="indent-result versatile-grey">
+          <h2 class="versatile-grey__title">Подытожим:</h2>
+          <ul class="indent-result__list">
+            <li class="indent-result__item">— отступы задаём от предыдущего элемента к следующему</li>
+            <li class="indent-result__item">— используем только <span lang="en">margin-right</span> и <span lang="en">margin-bottom</span></li>
+            <li class="indent-result__item">— внешние отступы задаются только между соседями</li>
+            <li class="indent-result__item">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+            <li class="indent-result__item">— последнему элементу группы отступ всегда обнуляем</li>
+          </ul>
 
-    <section class="indent-result">
-      <div class="container indent-result__container">
-        <h2 class="indent-result__title">Подытожим:</h2>
-        <ul class="indent-result__list">
-          <li class="indent-result__item">— отступы задаём от предыдущего элемента к следующему</li>
-          <li class="indent-result__item">— используем только <span>margin-right</span> и <span>margin-bottom</span></li>
-          <li class="indent-result__item">— внешние отступы задаются только между соседями</li>
-          <li class="indent-result__item">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-          <li class="indent-result__item">— последнему элементу группы отступ всегда обнуляем</li>
-        </ul>
-
-        <p class="indent-result__text">
-          Конечно бывают исключения. Ведь макеты бывают различной сложности. 
-          Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. 
-          Но для этого эти принципы необходимо хорошо знать.
-        </p>
-      </div>
-    </section>
+          <p class="indent-result__text">
+            Конечно бывают исключения. Ведь макеты бывают различной сложности. 
+            Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. 
+            Но для этого эти принципы необходимо хорошо знать.
+          </p>
+      </section>
+    </div>
   </article>
 </body>
 </html>

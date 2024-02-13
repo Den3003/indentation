@@ -1,0 +1,47 @@
+.universal {
+  padding: 25px 0;
+}
+
+.universal__title {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0 0 30px;
+}
+
+.universal__item {
+  margin: 0 0 30px;
+}
+
+.universal__description {
+  margin: 0 0 30px;
+}
+
+.universal__picture {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.universal__picture_block_center {
+  display: block;
+  margin: 0 auto;
+}
+
+.universal__picture_margin-bottom_add {
+  margin-bottom: 30px;
+}
+
+.universal__text {
+  margin: 0 0 30px;
+}
+
+.universal__text_margin_reset {
+  margin: 0;
+}
+
+.universal__item_margin_reset {
+  margin: 0;
+}
+
+.universal__word {
+  font-style: italic;
+}
