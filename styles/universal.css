@@ -18,7 +18,8 @@
 
 .universal__picture {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .universal__picture_block_center {
@@ -44,4 +45,11 @@
 
 .universal__word {
   font-style: italic;
+}
+
+.indent-dom__universal__text {
+  padding: 15px 30px;
+  margin: 0;
+  border: 1px solid #000;
+  border-top: none;
 }
